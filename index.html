@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="App.css">
+
+</head>
+<body>
+    <header class="header">Expense Tracker</header>
+    <div class="balance">
+        <p>YOUR BALANCE</p>
+        <p id="yourBal">$0.00</p>
+    </div>
+
+    <div class="moneydiv">
+        <div class="Income">
+            <p>INCOME</p>
+            <p id="Income">$0.00</p>
+        </div>
+        <div class="Expense">
+            <p>EXPENSE</p>
+            <p id="Expense">$0.00</p>
+        </div>
+    </div>
+
+    <h3 id="his">History</h3>
+    <ul class="list" id="list">
+
+    </ul>
+    <div class="newTrans">
+        <h3 id="newtr">Add new transaction</h3>
+        <form  id="form">
+            <div id="text">Text</div>
+            <input type="text" id="intext" placeholder="Enter Text...">
+            <div id="amount">
+                <div id="amo">
+                    <p class="para">Amount</p>
+                <p class="para">(negative-expense,positive-income)</p>
+                </div>
+                
+                <input type="number" id="inamo" placeholder="Enter Amount...">
+            </div>
+            <input type="submit" id="submit" value="Add Transaction">
+        </form>
+    </div>
+</body>
+<script src="App.js"></script>
+</html>
